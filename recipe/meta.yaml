@@ -1,5 +1,5 @@
 {% set name = "pyRXP" %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e3c03b88a396744f5c944cb80e48a7eefb4fc9c8e2265ed09b061efb4a635913
+  sha256: e70cdc9d45237e1e7996bfe21cedec2eec8f910c2d34dc46d77dbacb9cb329b6
   patches:
     # remove existing egg-info directory from tarball
     - remove-egg-info.patch
 
 build:
-  number: 1000
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 
 requirements:
