@@ -14,7 +14,7 @@ source:
 
 build:
   number: 0
-  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -22,6 +22,7 @@ requirements:
   host:
     - pip
     - python
+    - setuptools
   run:
     - python
 
@@ -34,7 +35,7 @@ about:
   dev_url: https://bitbucket.org/rptlab/pyrxp/
   license: ReportLab BSD derived
   license_family: BSD
-  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE.txt
+  license_file: LICENSE.txt
   summary: Python RXP interface - fast validating XML parser
 
 extra:
