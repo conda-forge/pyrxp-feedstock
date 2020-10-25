@@ -1,5 +1,5 @@
 {% set name = "pyRXP" %}
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e70cdc9d45237e1e7996bfe21cedec2eec8f910c2d34dc46d77dbacb9cb329b6
+  sha256: ad7c244db9dd1c15541af059d6ea58a7f3e533979abe8184a20848152477108e
   patches:
     # remove existing egg-info directory, and add license
     - clean-up-tarball.patch
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
