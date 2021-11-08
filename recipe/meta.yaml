@@ -11,7 +11,9 @@ source:
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  script:
+    - if exist "pyRXP.egg-info\SOURCES.txt" del "pyRXP.egg-info\SOURCES.txt"  # [win]
+    - {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
