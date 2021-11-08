@@ -10,6 +10,8 @@ source:
   sha256: 24ba90a2354f64f8ce8cacdc6c6f328157ff74d2ef143e91ccae653df8008194
 
 build:
+  error_overdepending: true
+  error_overlinking: true
   ignore_run_exports:
     - vs2015_runtime  # [win]
   number: 0
