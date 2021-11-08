@@ -11,7 +11,6 @@ source:
 
 build:
   error_overdepending: true
-  error_overlinking: true
   ignore_run_exports:
     - vs2015_runtime  # [win]
   number: 0
