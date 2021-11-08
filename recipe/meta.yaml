@@ -8,9 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 24ba90a2354f64f8ce8cacdc6c6f328157ff74d2ef143e91ccae653df8008194
-  patches:
-    # remove existing egg-info directory, and add license
-    - clean-up-tarball.patch
 
 build:
   number: 0
