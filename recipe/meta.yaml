@@ -1,5 +1,5 @@
 {% set name = "pyRXP" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 24ba90a2354f64f8ce8cacdc6c6f328157ff74d2ef143e91ccae653df8008194
+  sha256: f5563dee342f329f840380aafccf786b504d6a82e91611defb27f3f51043be9a
 
 build:
   error_overdepending: true
