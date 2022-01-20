@@ -46,7 +46,7 @@ test:
 
 about:
   home: http://www.reportlab.com
-  dev_url: https://bitbucket.org/rptlab/pyrxp/
+  doc_url: https://pyrxp.readthedocs.io/en/latest/usage.html
   license: ReportLab BSD derived
   license_family: BSD
   license_file: LICENSE.txt
