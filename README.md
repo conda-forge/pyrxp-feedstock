@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyrxp-feedstock
 
 Summary: Python RXP interface - fast validating XML parser
 
-Development: https://bitbucket.org/rptlab/pyrxp/
+Documentation: https://pyrxp.readthedocs.io/en/latest/usage.html
 
 Current build status
 ====================
