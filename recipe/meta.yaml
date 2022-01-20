@@ -13,10 +13,11 @@ build:
   error_overdepending: true
   ignore_run_exports:
     - vs2015_runtime  # [win]
-  number: 0
+  number: 1
   script:
     - if exist "pyRXP.egg-info\SOURCES.txt" del "pyRXP.egg-info\SOURCES.txt"  # [win]
     - {{ PYTHON }} -m pip install . -vv
+  skip: true  # [python_impl != 'cpython']
 
 requirements:
   build:
@@ -45,7 +46,7 @@ test:
 
 about:
   home: http://www.reportlab.com
-  dev_url: https://bitbucket.org/rptlab/pyrxp/
+  doc_url: https://pyrxp.readthedocs.io/en/latest/usage.html
   license: ReportLab BSD derived
   license_family: BSD
   license_file: LICENSE.txt
