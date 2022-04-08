@@ -13,7 +13,7 @@ build:
   error_overdepending: true
   ignore_run_exports:
     - vs2015_runtime  # [win]
-  number: 1
+  number: 2
   script:
     - if exist "pyRXP.egg-info\SOURCES.txt" del "pyRXP.egg-info\SOURCES.txt"  # [win]
     - {{ PYTHON }} -m pip install . -vv
