@@ -12,6 +12,7 @@ source:
 build:
   error_overdepending: true
   ignore_run_exports:
+    - ucrt  # [win]
     - vs2015_runtime  # [win]
   number: 3
   script:
