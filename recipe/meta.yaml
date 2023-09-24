@@ -13,8 +13,8 @@ build:
   error_overdepending: true
   ignore_run_exports:
     - ucrt  # [win]
-    - vs2015_runtime  # [win]
-  number: 3
+    - vc14_runtime  # [win]
+  number: 4
   script:
     - if exist "pyRXP.egg-info\SOURCES.txt" del "pyRXP.egg-info\SOURCES.txt"  # [win]
     - {{ PYTHON }} -m pip install . -vv
