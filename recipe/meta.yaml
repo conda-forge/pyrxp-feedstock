@@ -14,6 +14,8 @@ build:
   ignore_run_exports:
     - ucrt  # [win]
     - vc14_runtime  # [win]
+  ignore_run_exports_from:
+    - {{ compiler('c') }}
   number: 5
   script:
     - if exist "pyRXP.egg-info\SOURCES.txt" del "pyRXP.egg-info\SOURCES.txt"  # [win]
@@ -43,6 +45,7 @@ test:
   commands:
     # check requirements
     - python -m pip check
+    - python -m pip show pyRXP
     # run test suite
     - python test/runAll.py
 
