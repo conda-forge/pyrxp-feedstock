@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: f5563dee342f329f840380aafccf786b504d6a82e91611defb27f3f51043be9a
 
 build:
@@ -16,7 +16,7 @@ build:
     - vc14_runtime  # [win]
   ignore_run_exports_from:
     - {{ compiler('c') }}
-  number: 5
+  number: 6
   script:
     - if exist "pyRXP.egg-info\SOURCES.txt" del "pyRXP.egg-info\SOURCES.txt"  # [win]
     - {{ PYTHON }} -m pip install . -vv
