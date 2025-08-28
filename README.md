@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyrxp-feedstock
 
 Home: http://www.reportlab.com
 
-Package license: ReportLab BSD derived
+Package license: BDS-3-Clause
 
 Summary: Python RXP interface - fast validating XML parser
 
